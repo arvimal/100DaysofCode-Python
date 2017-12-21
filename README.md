@@ -12,4 +12,14 @@ The goal is to:
 6. Use and learn the Python Standard Library.
 
 
+### Day 1
+1. Strings
+2. Different ways of printing strings.
+2. ASCII and Unicode strings
+4. String concatenation
+5. Typecasting
 
+### Day 2
+1. String methods
+2. Python's inbuilt method introspection.
+3.
