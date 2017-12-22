@@ -57,7 +57,7 @@ print("{4} is the sum of {1} and {3}".format(*'012345'))
 print("{1}{0}{1}! You're done!".format("cad", "abra"))
 
 # Aligning text
-print("{:30}".format("testing")) # No effect
+print("{:30}".format("testing"))  # No effect
 print("{:^30}".format("Center aligned"))
 print("{:<30}".format("Left aligned"))
 print("{:>30}".format("Right aligned"))

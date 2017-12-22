@@ -22,4 +22,6 @@ The goal is to:
 ### Day 2
 1. String methods
 2. Python's inbuilt method introspection.
-3.
+
+### Day 3
+1. String formatting
