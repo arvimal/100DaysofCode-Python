@@ -11,6 +11,10 @@ The goal is to:
 5. Functions and Classes.
 6. Use and learn the Python Standard Library.
 
+To guide me through the very basics and to the STL, I will be using the awesome books by Michael Driscoll
+
+* Python 101
+* Python 201 (Paid)
 
 ### Day 1
 1. Strings
@@ -25,3 +29,10 @@ The goal is to:
 
 ### Day 3
 1. String formatting
+2. Lists and a few methods
+
+### Day 4
+1. Lists (Sorting)
+2. Tuples
+
+### Day 5
