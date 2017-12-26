@@ -41,3 +41,7 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 ### Day 6
 1. Conditionals (if/elif/else)
 2. Boolean operations (OR / AND / NOT)
+
+### Day 7
+1. Escaping special characters
+2.
