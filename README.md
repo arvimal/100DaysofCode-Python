@@ -44,4 +44,6 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 
 ### Day 7
 1. Escaping special characters
-2.
+
+### Day 8
+1. List comprehensions
