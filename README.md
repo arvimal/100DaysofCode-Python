@@ -47,3 +47,7 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 
 ### Day 8
 1. List comprehensions
+
+### Day 9
+1. Dictionary comprehensions
+2. Set comprehensions
