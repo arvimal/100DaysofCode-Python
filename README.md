@@ -16,6 +16,8 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 * Python 101
 * Python 201 (Paid)
 
+## I. Basics
+
 ### Day 1
 1. Strings
 2. Different ways of printing strings.
@@ -54,5 +56,18 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 
 ### Day 10
 1. Exceptions (try/except/else/finally)
-2. Working with files (Open, Read)
+2. Working with files (Open, Read, Write)
 
+### Day 11
+1. `with` statement
+2. Importing modules to the namespace
+3. Functions
+4. Keyword arguments (*args, **kwargs)
+5. Classes
+6. Subclassing from other classes
+
+## II. The Standard Library
+
+### Day 12
+1. Introspection
+2. The `csv` module
