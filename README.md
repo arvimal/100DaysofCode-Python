@@ -71,3 +71,6 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 ### Day 12
 1. Introspection
 2. The `csv` module
+
+### Day 13
+1. Continuing with `csv` module
