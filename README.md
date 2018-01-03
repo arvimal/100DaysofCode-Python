@@ -74,3 +74,9 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 
 ### Day 13
 1. Continuing with `csv` module
+
+### Day 14
+1. Continuing with `csv` module
+
+### Day 15
+1. Understanding `ConfigParser`
