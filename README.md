@@ -11,10 +11,11 @@ The goal is to:
 5. Functions and Classes.
 6. Use and learn the Python Standard Library.
 
-To guide me through the very basics and to the STL, I will be using the awesome books by Michael Driscoll
+I will be using the following books as guides in this journey.
 
-* Python 101
-* Python 201 (Paid)
+* `Python 101` - Michael Driscoll
+* `Python 201` - Michael Driscoll
+* `The Python 3 Standard Library by Example` - Doug Hellmann
 
 ## I. Basics
 
@@ -79,4 +80,18 @@ To guide me through the very basics and to the STL, I will be using the awesome 
 1. Continuing with `csv` module
 
 ### Day 15
-1. Understanding `ConfigParser`
+1. Understanding `configparser`
+    * Reading configurations
+    * Writing configurations
+
+### Day 16
+1. Continuing with `configparser`
+    * Reading multiple config files
+    * Finding and Printing Sections, Options, and Values in config files
+
+
+
+## Modules worked on, in #100DaysofCode
+
+1. csv
+2. configparser
