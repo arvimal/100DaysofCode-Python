@@ -89,7 +89,8 @@ I will be using the following books as guides in this journey.
     * Reading multiple config files
     * Finding and Printing Sections, Options, and Values in config files
 
-
+### Day 22
+    * Understand the `os` module
 
 ## Modules worked on, in #100DaysofCode
 
