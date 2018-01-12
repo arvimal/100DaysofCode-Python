@@ -25,3 +25,9 @@ except:
 print("os.renames() helps to rename dirs and files recursively")
 print("/tmp/dir_1 exists: {}".format(os.path.exists("/tmp/dir_1")))
 print("/tmp/dir_2 exists: {}".format(os.path.exists("/tmp/dir_2")))
+
+# os.walk walks through a directory,
+# and can find all the sub-dirs and files within
+for root, dirs, files in os.walk("/tmp/"):
+    print("{} : {} / {}".format(root, dirs, files))
+
