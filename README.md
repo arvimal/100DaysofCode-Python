@@ -86,13 +86,33 @@ I will be using the following books as guides in this journey.
 
 ### Day 16
 1. Continuing with `configparser`
-    * Reading multiple config files
-    * Finding and Printing Sections, Options, and Values in config files
+    * Reading multiple config files.
+    * Finding and Printing Sections, Options, and Values in config files.
+
+### Day 17
+    * Continuing with `configparser`
+
+### Day 18
+    * Continuing with `configparser`
+
+### Day 19
+    * Understand the `logging` module
+
+### Day 20
+    * Continuing with `logging`
+
+### Day 21
+    * Continuing with `logging`
 
 ### Day 22
-    * Understand the `os` module
+    * Understand the `os` module.
+
+### Day 23
+    * Continuing with `os` module.
+
 
 ## Modules worked on, in #100DaysofCode
-
 1. csv
 2. configparser
+3. logging
+4. os
