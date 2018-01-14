@@ -9,7 +9,10 @@ FILE = "testing.txt"
 PATH = FOLDER + FILE
 
 # Checking for pre-existence, and deleting
-os.removedirs(FOLDER)
+try:
+    os.removedirs(FOLDER)
+except OSError:
+    pass
 
 print("Creating {}".format(FOLDER))
 os.makedirs(FOLDER)
