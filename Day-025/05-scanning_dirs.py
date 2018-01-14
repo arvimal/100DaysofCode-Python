@@ -7,6 +7,14 @@
 # to check if the entry is a file, folder, symlink etc.
 # The iterator can be stat using <iterator>.stat
 
+# From Py3MoTD:
+"""
+scandir() returns a sequence of DirEntry instances
+for the items in the directory.
+This object has several attributes and methods
+for accessing metadata about the file.
+"""
+
 import os
 import sys
 
@@ -26,5 +34,4 @@ for i in os.scandir(path):
     print("\tType: {}".format(data_type))
     print("\tInode #: {}".format(i.stat().st_ino))
     print("\tModified time: {}".format(i.stat().st_mtime))
-
     print("\tStating all info: \n{}".format(i.stat()))
