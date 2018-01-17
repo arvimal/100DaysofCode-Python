@@ -41,6 +41,9 @@ mail_server = smtplib.SMTP("smtp.mail.yahoo.com", 25)
 # Set debuglevel to True to show the communication with the server
 mail_server.set_debuglevel(True)
 try:
+    # NOTE: The `sendmail()` method takes the recipient addresses
+    # as a list, since a mail can be send to multiple addresses
+    # in a single go.
     mail_server.sendmail("arvimal@yahoo.in",
                          ["arvimal@yahoo.in"],
                          message.as_string())
