@@ -90,44 +90,44 @@ I will be using the following books as guides in this journey.
     * Finding and Printing Sections, Options, and Values in config files.
 
 ### Day 17
-    * Continuing with `configparser`
+1. Continuing with `configparser`
 
 ### Day 18
-    * Continuing with `configparser`
+1. Continuing with `configparser`
 
 ### Day 19
-    * Understand the `logging` module
+1. Understand the `logging` module
 
 ### Day 20
     * Continuing with `logging`
 
 ### Day 21
-    * Continuing with `logging`
+1. Continuing with `logging`
 
 ### Day 22
-    * Understand the `os` module.
+1. Understand the `os` module.
 
 ### Day 23
-    * Continuing with `os` module.
+1. Continuing with `os` module.
 
 ### Day 24
-    * Continuing with `os` module.
+1. Continuing with `os` module.
 
 ### Day 25
-    * Finished `os` module.
+1. Finished `os` module.
 
 ### Day 26
-    * Started `smtplib` module
+1. Started `smtplib` module
 
 ### Day 27
-   * sqlite3 (Didn't complete, will revisit)
+1. sqlite3 (Didn't complete, will revisit)
 
 ### Day 28
-     * Continuing with `smtplib` module.
+1. Continuing with `smtplib` module.
 
 ### Day 29
-    * Finished `smtplib`
-    * Started `subprocess`
+1. Finished `smtplib`
+2. Started `subprocess`
 
 ## Modules worked on, in #100DaysofCode
 1. csv
