@@ -110,9 +110,29 @@ I will be using the following books as guides in this journey.
 ### Day 23
     * Continuing with `os` module.
 
+### Day 24
+    * Continuing with `os` module.
+
+### Day 25
+    * Finished `os` module.
+
+### Day 26
+    * Started `smtplib` module
+
+### Day 27
+   * sqlite3 (Didn't complete, will revisit)
+
+### Day 28
+     * Continuing with `smtplib` module.
+
+### Day 29
+    * Finished `smtplib`
+    * Started `subprocess`
 
 ## Modules worked on, in #100DaysofCode
 1. csv
 2. configparser
 3. logging
 4. os
+5. smtplib
+6. subprocess
