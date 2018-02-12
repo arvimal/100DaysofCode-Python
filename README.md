@@ -129,6 +129,15 @@ I will be using the following books as guides in this journey.
 1. Finished `smtplib`
 2. Started `subprocess`
 
+..
+....
+
+### Day 45
+1. Continuing `threading`
+
+### Day 46
+1. Continuing `threading`
+
 ## Modules worked on, in #100DaysofCode
 1. csv
 2. configparser
@@ -136,3 +145,4 @@ I will be using the following books as guides in this journey.
 4. os
 5. smtplib
 6. subprocess
+7. threading
