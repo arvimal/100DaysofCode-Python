@@ -138,6 +138,9 @@ I will be using the following books as guides in this journey.
 ### Day 46
 1. Continuing `threading`
 
+### Day 49
+1. Started with `datetime`
+
 ## Modules worked on, in #100DaysofCode
 1. csv
 2. configparser
@@ -146,3 +149,4 @@ I will be using the following books as guides in this journey.
 5. smtplib
 6. subprocess
 7. threading
+8. datetime
