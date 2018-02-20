@@ -141,6 +141,9 @@ I will be using the following books as guides in this journey.
 ### Day 49
 1. Started with `datetime`
 
+### Day 53
+1. Lambda functions
+
 ## Modules worked on, in #100DaysofCode
 1. csv
 2. configparser
