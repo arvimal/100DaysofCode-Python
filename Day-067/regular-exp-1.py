@@ -5,7 +5,7 @@
 import re
 
 # Text to search
-text = "Hello, how are you?"
+text = "Hello, how are you, Are you fine?"
 
 # Patterns to match
 pattern_A = "this"
