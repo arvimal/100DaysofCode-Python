@@ -3,18 +3,36 @@
 # Write a function that verifies if a given input is a float or not.
 # Do not use the float() builtin anywhere.
 
+# The theme is to build a feature similar to the `is*` methods
+# available for the `str` class.
+# In [14]: [i for i in dir(str) if i.startswith("is")]
+# Out[14]:
+# ['isalnum',
+# 'isalpha',
+# 'isdecimal',
+# 'isdigit',
+# 'isidentifier',
+# 'islower',
+# 'isnumeric',
+# 'isprintable',
+# 'isspace',
+# 'istitle',
+# 'isupper']
+
 
 def isfloat(x):
     """
-    Function to check if the input is a float or not
+    Function to check if the input is a float or not.
+    Even if the input is a string in the form of an int/float,
+    they should be treated as int/float respectively.
 
     -----
     Possible inputs:
-        a) A proper integer [1]
-        b) A float [10.2]
-        c) An integer as a string ["1"]
-        d) A float as a string ["10.2"]
-        e) A mixed string ["10.a"]
+        a) A proper integer [1], should return int
+        b) A float [10.2], should return float
+        c) An integer as a string ["1"], should return int
+        d) A float as a string ["10.2"], should return float
+        e) A mixed string ["10.a"], should return string
 
     Idea:
         1. Convert the input to a string.
@@ -52,7 +70,8 @@ def isfloat(x):
         except ValueError:
             print("{} is a string.".format(str(a) + "." + str(b)))
 
-
+    else:
+        print("{} is a string".format(x))
 #
 isfloat(1)
 isfloat("1")
@@ -61,3 +80,5 @@ isfloat(1.5)
 isfloat("1.5")
 # --
 isfloat("a.2")
+# --
+isfloat("1.2.4")

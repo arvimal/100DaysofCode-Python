@@ -18,3 +18,4 @@ def calculator(action=None, *args):
 
 calculator("add", 10, 2)
 calculator("mult", 20, 20)
+calculator()

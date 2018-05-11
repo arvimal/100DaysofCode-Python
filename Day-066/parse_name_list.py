@@ -8,6 +8,7 @@ def dedup_and_title_case_names(names):
     """Should return a list of names, each name appears only once"""
     NAMES_NEW = []
     for name in NAMES:
+        print(name.title())
         if name.title() not in NAMES_NEW:
             NAMES_NEW.append(name.title())
         else:
@@ -24,3 +25,5 @@ def sort_by_surname_desc(names):
 def shortest_first_name(names):
     names = dedup_and_title_case_names(names)
     return sorted(names)[0].split()[0]
+
+dedup_and_title_case_names(NAMES)
