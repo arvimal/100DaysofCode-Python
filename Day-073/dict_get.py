@@ -5,6 +5,8 @@ The get() method for a dict is used to:
     * Check if a key exist in dict.
     * If the key does not exist, return a predefined value.
 
+NOTE: Without using the `get()` method, calling a inexistent dict key
+      will error out with `KeyError`.
 """
 
 birthdays = {
