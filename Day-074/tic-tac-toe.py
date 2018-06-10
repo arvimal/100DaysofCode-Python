@@ -2,7 +2,7 @@
 
 # Generate a tic-tac-toe board using dicts.
 
-"""
+
 theBoard = {"top-L": " ", "top-M": " ", "top-R": " ",
             "mid-L": " ", "mid-M": " ", "mid-R": " ",
             "low-L": " ", "low-M": " ", "low-R": " "}
@@ -13,7 +13,7 @@ theBoard = [
     {"mid-L": " ", "mid-M": " ", "mid-R": " ", },
     {"low-L": " ", "low-M": " ", "low-R": " "}
 ]
-
+"""
 
 def printBoard(board):
     """Print the latest state"""
@@ -76,3 +76,5 @@ if __name__ == "__main__":
     # There are two players in tic-tac-toe, "X" and "O".
     # Both the player and their move is denoted by "X" and "O".
     play_loop()
+
+print("Trying the test board!")
