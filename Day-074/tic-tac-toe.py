@@ -76,5 +76,3 @@ if __name__ == "__main__":
     # There are two players in tic-tac-toe, "X" and "O".
     # Both the player and their move is denoted by "X" and "O".
     play_loop()
-
-print("Trying the test board!")
