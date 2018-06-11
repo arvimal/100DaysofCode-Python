@@ -15,6 +15,7 @@ theBoard = [
 ]
 """
 
+
 def printBoard(board):
     """Print the latest state"""
 
