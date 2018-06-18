@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
+# Pybites #100DaysofChallenge third day Challenge
+# Create a Pomodoro application
+
 import datetime
+import sys
 
 pomodoro_count = 0
 
@@ -17,13 +21,16 @@ def set_pomodoro():
 
     # 2. Safety checks
     value = input("\nEnter your time in minutes: ")
-    if type(value) is not int:
+
+    if value == "quit".lower():
+        sys.exit("\nExiting the Pomodoro tracker.\n")
+    elif value == "":
+        set_pomodoro()
+    elif value.isdecimal():
         try:
             value = int(value)
         except [ValueError]:
             set_pomodoro()
-    elif value == "":
-        set_pomodoro()
 
     # 3. Setting the current time
     time_now = datetime.datetime.now()
