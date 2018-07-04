@@ -12,12 +12,21 @@ def group_match(num=None):
 
         try:
             if num_search.group():
-                print("Your number {} matches the pattern.".format(
+                print("\n-Your number {} matches the pattern.".format(
                     num_search.group()))
+                num_groups = len(num_search.groups())
+                print(
+                    "  * Number of groups/sections in the number: {}".format(num_groups))
+                print("  * Groups: ")
+                for i in range(len(num_search.groups())):
+                    print("    {}. {}".format(i + 1, num_search.groups()[i]))
+
         except AttributeError:
-            print("Your number {} does not match the pattern.".format(num))
+            print("\n-Your number {} does not match the pattern.".format(num))
 
 
+group_match("986-015-2544")
+group_match("9860152544")
 group_match("123-456-7890")
 group_match("1234567890")
 group_match("2345-54354-65w56")
