@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
 """
-This program generates passages that are generated in mad-lib format
-Author: Katherin
+Mad Libs program in Python
+
+The gist is to probe the user for several inputs, and add them in
+the STORY template.
+
+The output turn outs to be usually funny.
 """
 
-# The template for the story
+# The Story template
 
 STORY = "This morning %s woke up feeling %s. 'It is going to be a %s day!' Outside, a bunch of %ss were protesting to keep %s in stores. They began to %s to the rhythm of the %s, which made all the %ss very %s. Concerned, %s texted %s, who flew %s to %s and dropped %s in a puddle of frozen %s. %s woke up in the year %s, in a world where %ss ruled the world."
 
