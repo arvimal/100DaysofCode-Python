@@ -2,18 +2,19 @@
 
 """
 This program does the following:
-	* Roll a pair of dice.
-  * Add the values of the roll.
-  * Ask the user to guess a number.
-  * Compare the user's guess to the total value.
-  * Determine the winner (user or computer).
+    * Roll a pair of dice.
+    * Add the values of the roll.
+    * Ask the user to guess a number.
+    * Compare the user's guess to the total value.
+    * Determine the winner (user or computer).
 """
 
 from random import randint
 from time import sleep
 
 def get_user_guess():
-  guess = int(raw_input("What's your guess?"))
+  guess = int(input("What's your guess?"))
+  return guess
 
 
 def roll_dice(number_of_sides):
