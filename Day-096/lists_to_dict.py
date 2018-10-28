@@ -11,6 +11,6 @@ caffeine = [64, 40, 0, 120]
 
 output_dict = {key:value for key, value in zip(drinks, caffeine)}
 
-print("\nItems and prices:-\n")
+print("\nItems and caffeine scale:-\n")
 for key in output_dict:
     print("{:<10}: {:<10}".format(key, output_dict[key]))
