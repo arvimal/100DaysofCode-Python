@@ -17,6 +17,8 @@ def split_in_columns(message=message):
     and join it together on '|' (pipe),
     return the obtained output"""
     words = message.split("\n")
-    print("|".join(words))
+    print(("|").join(words))
+    return ("|").join(words)
+
 
 split_in_columns(message)
