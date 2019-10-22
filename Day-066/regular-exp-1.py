@@ -25,11 +25,7 @@ ingredient = "Kumquat: 2 cups"
 # 4. Compile the Regular expression pattern
 # pattern = re.compile(pattern_text)
 
-pattern = re.compile(
-    r'(?P<ingredient>\w+):\s+'
-    r'(?P<amount>\d+)\s+'
-    r'(?P<unit>\w+)'
-)
+pattern = re.compile(r"(?P<ingredient>\w+):\s+" r"(?P<amount>\d+)\s+" r"(?P<unit>\w+)")
 # 5. Match the pattern against the input text, `ingredient` in this case.
 match = pattern.match(ingredient)
 print(match.groups())

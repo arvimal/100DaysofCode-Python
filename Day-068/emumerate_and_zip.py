@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-names = 'Julian Bob PyBites Dante Martin Rodolfo'.split()
-countries = 'Australia Spain Global Argentina USA Mexico'.split()
+names = "Julian Bob PyBites Dante Martin Rodolfo".split()
+countries = "Australia Spain Global Argentina USA Mexico".split()
 
 
 def enumerate_names_countries():

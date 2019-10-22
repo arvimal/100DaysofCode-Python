@@ -2,7 +2,7 @@
 
 # Reading and writing to files.
 
-#1. Use the `open` builtin to create a file handler
+# 1. Use the `open` builtin to create a file handler
 # `readlines` is used to read all the lines in the file.
 # `readlines` returns a list.
 # Make sure the file descriptor is closed after the operations.
@@ -14,7 +14,7 @@ try:
 except IOError:
     print("IOError while reading {0}".format(fd1.name))
 
-#2. Modes of access
+# 2. Modes of access
 # `open()` takes multiple modes, ie. read, write, read_write etc.
 # Refer `help(open)` for details.
 """
@@ -36,9 +36,8 @@ try:
 except IOError:
     print("IOError while reading {0}".format(fd2.name))
 
-#3. Read in various chunks
+# 3. Read in various chunks
 # Reads can be done as
 #   * One line at a time.
 #   * Read all lines in a single go (output as a list)
 #   * Read the file in chunks.
-

@@ -17,7 +17,9 @@ with sqlite3.connect(sqlite3_db) as connection:
 
     print("Adding initial data.")
 
-    connection.executescript("""
+    connection.executescript(
+        """
         insert into project (subject, date, priority)
         values ("Testing sqlite3", "today", "high");
-        """)
+        """
+    )

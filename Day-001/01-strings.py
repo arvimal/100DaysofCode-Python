@@ -4,9 +4,9 @@
 
 # Quotes can be either single, double, or triple.
 string_1 = "Day 1 of #100DaysofCode!"
-string_2 = 'Day 1 of #100DaysofCode!'
+string_2 = "Day 1 of #100DaysofCode!"
 string_3 = """Day 1 of #100DaysofCode!"""
-string_4 = '''Day 1 of #100DaysofCode!'''
+string_4 = """Day 1 of #100DaysofCode!"""
 
 # If the line contains a single quote,
 # escape it with double quotes

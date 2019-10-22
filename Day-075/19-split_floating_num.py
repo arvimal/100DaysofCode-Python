@@ -12,6 +12,7 @@ def is_int(x):
 
 def is_int(x):
     import math
+
     real, deci = math.modf(x)
     if deci == 0.0:
         print("An int")

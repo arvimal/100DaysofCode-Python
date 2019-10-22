@@ -2,11 +2,13 @@
 
 """Find the common words in both the strings"""
 
+
 def contains(big_string, little_string):
-  if little_string in big_string:
-    return True
-  else:
-    return False
+    if little_string in big_string:
+        return True
+    else:
+        return False
+
 
 def common_letters(string_one, string_two):
     common_words = []
@@ -20,6 +22,4 @@ def common_letters(string_one, string_two):
     return common_words
 
 
-
-
-common_letters('manhattan', 'san francisco')
+common_letters("manhattan", "san francisco")

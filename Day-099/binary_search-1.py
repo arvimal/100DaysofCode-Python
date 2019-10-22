@@ -8,6 +8,7 @@ since it divides the data set into half in each iteration.
 Thus the time compllex increases in the logarithmic rate.
 """
 
+
 def binary_search():
     """
     A function to create a binary search algo

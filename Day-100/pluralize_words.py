@@ -17,4 +17,5 @@ def print_game_stats(games_won=games_won):
         else:
             print("{} won {} games.".format(key, games_won[key]))
 
+
 print_game_stats()

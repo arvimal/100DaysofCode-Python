@@ -31,4 +31,3 @@ if empty_list == []:
 # This is an existence check, and not a content check.
 if empty_dict:
     print("Empty dict")
-

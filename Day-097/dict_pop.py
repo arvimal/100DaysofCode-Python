@@ -15,33 +15,49 @@ available_items = {
     "green elixir": 20,
     "strength sandwich": 25,
     "stamina grains": 15,
-    "power stew": 30
-    }
+    "power stew": 30,
+}
 
 # The variable to add the points to
 health_points = 20
 
 print("Starting ..")
-print("{:<20}: {}, {:<20}: {}".format("Available items", available_items, "Health points", health_points))
+print(
+    "{:<20}: {}, {:<20}: {}".format(
+        "Available items", available_items, "Health points", health_points
+    )
+)
 # Answer: The operation
 
 ## A. Add the value of the key `stamina grains` to `health_points`
 ## and delete `stamina grains` from `health_points`.
 print("Adding `stamina grains` to Available item list.")
 health_points += available_items.pop("stamina grains", 0)
-print("{:<20}: {}, {:<20}: {}".format("Available items", available_items, "Health points", health_points))
+print(
+    "{:<20}: {}, {:<20}: {}".format(
+        "Available items", available_items, "Health points", health_points
+    )
+)
 
 ## B. Add the value of the key `power stew` to `health_points`
 ## and delete `power stew` from `health_points`.
 print("Adding `power stew` to Available item list.")
 health_points += available_items.pop("power stew", 0)
-print("{:<20}: {}, {:<20}: {}".format("Available items", available_items, "Health points", health_points))
+print(
+    "{:<20}: {}, {:<20}: {}".format(
+        "Available items", available_items, "Health points", health_points
+    )
+)
 
 ## C. Add the value of the key `mystic bread` to `health_points`
 ## and delete `mystic bread` from `health_points`.
 print("Adding `mystic bread` to Available item list.")
 health_points += available_items.pop("mystic bread", 0)
-print("{:<20}: {}, {:<20}: {}".format("Available items", available_items, "Health points", health_points))
+print(
+    "{:<20}: {}, {:<20}: {}".format(
+        "Available items", available_items, "Health points", health_points
+    )
+)
 
-#print(available_items)
-#print(health_points)
+# print(available_items)
+# print(health_points)

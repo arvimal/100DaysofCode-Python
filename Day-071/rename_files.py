@@ -21,12 +21,15 @@ def rename_files():
 
     You will need the `re`, `os`, and `shutil` modules to begin
     """
-    date_regex = re.compile(r"""^(.*?)
+    date_regex = re.compile(
+        r"""^(.*?)
         ((0|1)?\d)-
         ((0|1|2|3)?\d)-
         ((19|20)?\d\d)
         (.*?)$
-        """, re.VERBOSE)
+        """,
+        re.VERBOSE,
+    )
     # print(date_regex)
     os.chdir("/tmp/")
     for file in os.listdir("/tmp/"):
@@ -47,4 +50,6 @@ def rename_files():
             eurofilename = os.path.join(absPath, eurofilename)
             print("Renaming {} to {}".format(amerfilename, eurofilename))
             shutil.move(amerfilename, eurofilename)
+
+
 rename_files()

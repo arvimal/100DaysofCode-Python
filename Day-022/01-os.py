@@ -29,4 +29,3 @@ print("Creating /tmp/new_dir/dir1/dir2/")
 os.makedirs("/tmp/new_dir/dir1/dir2")
 os.chdir("/tmp/new_dir/dir1/dir2")
 print("Where are we?: {}".format(os.getcwd()))
-

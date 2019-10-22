@@ -24,6 +24,7 @@ print()
 
 # Using the `string.capwords()` method
 import string
+
 print("- Using the `string.capwords()` method.")
 print("Initial state: {}".format(sentence))
 print("Final state:   {}".format(string.capwords(sentence)))

@@ -11,7 +11,7 @@ while i < 10:
 # Checking for a `True` condition using `while`
 # will always be running.
 
-#while True:
+# while True:
 #   print(">>>")
 
 # break

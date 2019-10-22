@@ -14,8 +14,10 @@ print("Printing the interpreter version in a tuple")
 print(sys.version_info)
 
 print("\nInterpreter information:".title())
-print("`sys.version_info` can be used for checking\
- python versions")
+print(
+    "`sys.version_info` can be used for checking\
+ python versions"
+)
 print("Major version: {0:5}".format(sys.version_info[0]))
 print("Minor version: {0:5}".format(sys.version_info[1]))
 
@@ -27,5 +29,5 @@ print("Installed in: {0:10}".format(sys.prefix))
 
 print("\npython paths:".upper())
 import pprint
-pprint.pprint(sys.path)  # Print on multiple lines
 
+pprint.pprint(sys.path)  # Print on multiple lines

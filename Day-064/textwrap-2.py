@@ -30,5 +30,4 @@ print("\nPoints:")
 sentence_list = cleaned_text.split(".")
 print(sentence_list)
 for i in range(0, len(sentence_list) - 1):
-    print("{}. {}.".format(i+1, sentence_list[i]))
-
+    print("{}. {}.".format(i + 1, sentence_list[i]))

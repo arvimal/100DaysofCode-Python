@@ -10,7 +10,7 @@ class MyClass:
 
     def __sizeof__(self):
         print(self.__dict__.values())
-        #return object.__sizeof__(self) + sum(sys.getsizeof(v) for v in self.__dict__.values())
+        # return object.__sizeof__(self) + sum(sys.getsizeof(v) for v in self.__dict__.values())
 
 
 my_class = MyClass()

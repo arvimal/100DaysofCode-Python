@@ -2,8 +2,8 @@
 
 import collections
 
-a = {'a': "A", 'b' : "B"}
-b = {'c' : "C", "d" : "D"}
+a = {"a": "A", "b": "B"}
+b = {"c": "C", "d": "D"}
 
 chained_dicts = collections.ChainMap(a, b)
 

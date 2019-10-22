@@ -15,4 +15,3 @@ pattern_A = "this"
 pattern_B = "how"
 pattern_C = "that"
 pattern_D = "are"
-

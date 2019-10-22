@@ -2,6 +2,7 @@
 
 # Count the occurrences of `item` in the sequence.
 
+
 def count(sequence, item):
     count = 0
     for i in range(len(sequence)):
@@ -11,4 +12,4 @@ def count(sequence, item):
 
 
 count([7, 7, 3, 7, 0, 7], 1)
-count([4, 'foo', 5, 'foo'],5)
+count([4, "foo", 5, "foo"], 5)

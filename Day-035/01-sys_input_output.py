@@ -27,4 +27,3 @@ data = sys.stdin.read()
 print("Writing data to stdout")
 sys.stdout.write(data)
 sys.stdout.flush()
-

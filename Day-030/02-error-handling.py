@@ -24,9 +24,7 @@ subprocess.run(["false"])
 # since the above one is designed to hit an exception and
 # hence won't proceed further down.
 try:
-    subprocess.run(['false'], check=True)
+    subprocess.run(["false"], check=True)
 except subprocess.CalledProcessError as e:
     print("Exception hit")
     print(e)
-
-

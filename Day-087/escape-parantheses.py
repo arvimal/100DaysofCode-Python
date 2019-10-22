@@ -13,19 +13,21 @@ def group_match(num=None):
 
         try:
             if num_search.group():
-                print("\n-Your number {} matches the pattern.".format(
-                    num_search.group()))
+                print(
+                    "\n-Your number {} matches the pattern.".format(num_search.group())
+                )
                 num_groups = len(num_search.groups())
                 print(
-                    "  * Number of groups/sections in the number: {}".format(num_groups))
+                    "  * Number of groups/sections in the number: {}".format(num_groups)
+                )
                 print("  * Groups: ")
                 # print(num_search.groups())
                 # print(num_search.groups()[2:])
-                print("    1. {}".format(
-                    num_search.groups()[0].rstrip(")").lstrip("(")))
+                print(
+                    "    1. {}".format(num_search.groups()[0].rstrip(")").lstrip("("))
+                )
                 for i in range(len(num_search.groups()[2:])):
-                    print("    {}. {}".format(
-                        i + 2, num_search.groups()[2:][i]))
+                    print("    {}. {}".format(i + 2, num_search.groups()[2:][i]))
 
         except AttributeError:
             print("\n-Your number {} does not match the pattern.".format(num))

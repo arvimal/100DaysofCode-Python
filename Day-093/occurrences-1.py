@@ -3,8 +3,7 @@
 # Find the occurrences of each word in the following sentence.
 # Return the word and the number of occurrences.
 
-sentence = \
-"""
+sentence = """
 Nathan Pinchback Tomer, who adopted the name Jean Tomer early
 in his literary career, was born in Washington, D.C. in 1894.
 Jean is the son of Nathan Tomer was a mixed-race freedman,

@@ -3,9 +3,17 @@
 # Generate a tic-tac-toe board using dicts.
 
 
-theBoard = {"top-L": " ", "top-M": " ", "top-R": " ",
-            "mid-L": " ", "mid-M": " ", "mid-R": " ",
-            "low-L": " ", "low-M": " ", "low-R": " "}
+theBoard = {
+    "top-L": " ",
+    "top-M": " ",
+    "top-R": " ",
+    "mid-L": " ",
+    "mid-M": " ",
+    "mid-R": " ",
+    "low-L": " ",
+    "low-M": " ",
+    "low-R": " ",
+}
 """
 
 theBoard = [
@@ -22,14 +30,11 @@ def printBoard(board):
     print("\n      - TIC TAC TOE - ")
     print("\n")
     print("\t{}".format("-" * 9))
-    print("\t{} | {} | {}".format(
-        board["top-L"], board["top-M"], board["top-R"]))
+    print("\t{} | {} | {}".format(board["top-L"], board["top-M"], board["top-R"]))
     print("\t{}".format("-" * 9))
-    print("\t{} | {} | {}".format(
-        board["mid-L"], board["mid-M"], board["mid-R"]))
+    print("\t{} | {} | {}".format(board["mid-L"], board["mid-M"], board["mid-R"]))
     print("\t{}".format("-" * 9))
-    print("\t{} | {} | {}".format(
-        board["low-L"], board["low-M"], board["low-R"]))
+    print("\t{} | {} | {}".format(board["low-L"], board["low-M"], board["low-R"]))
     print("\t{}".format("-" * 9))
     print("\n")
 
@@ -39,7 +44,7 @@ def check_win(theBoard):
     Check for a win
     """
     vals = ["X", "O"]
-    #import pdb
+    # import pdb
     # pdb.set_trace()
     for i in vals:
 
@@ -54,11 +59,10 @@ def check_win(theBoard):
 
 
 def play_loop():
-    player = 'X'
+    player = "X"
     for i in range(9):
         printBoard(theBoard)
-        move_location = input(
-            "Player ** {} **, enter location: ".format(player))
+        move_location = input("Player ** {} **, enter location: ".format(player))
         if move_location not in theBoard.keys():
             print("  \nLocation {} not valid. Try again!".format(move_location))
             play_loop()

@@ -15,18 +15,23 @@ def hello(*args):
     print("First element : {}".format(args[0]))
     print("Second element : {}\n".format(args[1]))
 
+
 hello("hello", "how", "are", "you?")
 hello(1, 2, 3)
-hello([1,2], ["a", "b"])
+hello([1, 2], ["a", "b"])
 
 
 # 2. **kwargs
 def keyargs(**kwargs):
     print(kwargs)
+
+
 keyargs(name="Tulip", job="SDE")
+
 
 def testing(*args, **kwargs):
     print(args)
     print(kwargs)
+
 
 testing(1, 2, numbers="One and Two", name="numerals")

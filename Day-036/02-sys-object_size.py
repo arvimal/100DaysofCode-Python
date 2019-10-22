@@ -17,6 +17,8 @@ print("\nCreating new objects.")
 
 class MyClass:
     pass
+
+
 # Function
 
 

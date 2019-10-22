@@ -11,8 +11,6 @@ def check_name(name=None):
     else:
         print("Name formatting not correct, try again.")
 
+
 check_name("cee-an-110")
 check_name("cfd-asds-121213")
-
-
-

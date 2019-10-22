@@ -12,11 +12,13 @@ def group_match(num=None):
 
         try:
             if num_search.group():
-                print("\n-Your number {} matches the pattern.".format(
-                    num_search.group()))
+                print(
+                    "\n-Your number {} matches the pattern.".format(num_search.group())
+                )
                 num_groups = len(num_search.groups())
                 print(
-                    "  * Number of groups/sections in the number: {}".format(num_groups))
+                    "  * Number of groups/sections in the number: {}".format(num_groups)
+                )
                 print("  * Groups: ")
                 for i in range(len(num_search.groups())):
                     print("    {}. {}".format(i + 1, num_search.groups()[i]))

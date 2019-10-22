@@ -5,6 +5,7 @@ Write an assert statement that triggers an AssertionError
 if the variable spam is an integer greater than 10.
 """
 
+
 def check_int(spam=None):
     """
     IMPORTANT:

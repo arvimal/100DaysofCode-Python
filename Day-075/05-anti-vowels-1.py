@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def anti_vowels(text):
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     text_list = list(text)
@@ -10,8 +11,8 @@ def anti_vowels(text):
         for i in text_list:
             # print("Iterating {}".format(i))
             if i in vowels:
-                #print("{} is present in {}".format(i, vowels))
-                #print("Removing {}".format(i))
+                # print("{} is present in {}".format(i, vowels))
+                # print("Removing {}".format(i))
                 text_list.remove(i)
                 # print(text_list)
 
@@ -20,6 +21,7 @@ def anti_vowels(text):
     for i in text_list:
         text_new += i
     print(text_new)
+
 
 # anti_vowels("Hey how are you tuodayu")
 anti_vowels("Hey look Words!")

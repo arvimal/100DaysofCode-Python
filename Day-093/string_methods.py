@@ -24,21 +24,21 @@ Dreamwood:Adrienne Rich:1987"
 
 # 1. Split the string to a list, based on the comma delimiter
 highlighted_poems_list = highlighted_poems.split(",")
-#print(highlighted_poems_list)
+# print(highlighted_poems_list)
 
 # 2. Strip any white space present in each elements
 highlighted_poems_stripped = []
 for word in highlighted_poems_list:
-  highlighted_poems_stripped.append(word.strip())
-#print(highlighted_poems_stripped)
+    highlighted_poems_stripped.append(word.strip())
+# print(highlighted_poems_stripped)
 
 # 3. Split each author info into a separate list for
 # easier iteration. The split is done at the ":" delimiter.
 # We end up with a list of lists.
 highlighted_poems_details = []
 for data in highlighted_poems_stripped:
-  highlighted_poems_details.append(data.split(":"))
-#print(highlighted_poems_details)
+    highlighted_poems_details.append(data.split(":"))
+# print(highlighted_poems_details)
 
 # 4. Create three lists to carry specific information
 titles = []
@@ -48,10 +48,10 @@ dates = []
 # 5. Iterate through the lists within the main list,
 # and append the info to the respective list.
 for poet_list in highlighted_poems_details:
-  titles.append(poet_list[0])
-  poets.append(poet_list[1])
-  dates.append(poet_list[2])
+    titles.append(poet_list[0])
+    poets.append(poet_list[1])
+    dates.append(poet_list[2])
 
 # 6. Print the information in the desired format.
 for info in highlighted_poems_details:
-  print("The poem {} was published by {} in {}".format(info[0], info[1], info[2]))
+    print("The poem {} was published by {} in {}".format(info[0], info[1], info[2]))

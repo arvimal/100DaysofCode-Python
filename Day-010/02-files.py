@@ -23,8 +23,7 @@ finally:
 # hence we wrap it in a try/except statement.
 try:
     f1 = open("/tmp/new.txt", "x")
-except FileExistsError: # In Python 3.6
+except FileExistsError:  # In Python 3.6
     print("{0} exists!".format(f1.name))
 finally:
     f1.close()
-

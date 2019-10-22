@@ -58,15 +58,13 @@ if mail_server.has_extn("STARTTLS"):
 else:
     print("{} does not support TLS".format(server_name))
 
-if mail_server.has_extn('AUTH'):
+if mail_server.has_extn("AUTH"):
     print("Trying to authenticate using username/password")
     mail_server.login(username, password)
 else:
     print("{} does not support authentication".format(server_name))
 
-mail_server.sendmail("arvimal@yahoo.in",
-                     [recipient],
-                     message.as_string())
+mail_server.sendmail("arvimal@yahoo.in", [recipient], message.as_string())
 
 # Quit once the message has been send
 mail_server.quit()

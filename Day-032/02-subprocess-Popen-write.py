@@ -4,7 +4,6 @@ import subprocess
 
 print("Write: ")
 
-process = subprocess.Popen(["cat", "-"],
-                           stdin=subprocess.PIPE,)
+process = subprocess.Popen(["cat", "-"], stdin=subprocess.PIPE)
 
-process.communicate("Stdin: to stdin".encode('utf-8'))
+process.communicate("Stdin: to stdin".encode("utf-8"))

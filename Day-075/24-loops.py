@@ -4,10 +4,10 @@
 
 # 1. `for loops
 print("Example 1 : for loops")
-for i in [1,2,3,4,5]:
+for i in [1, 2, 3, 4, 5]:
     print(i)
 
-#2. `while` loop
+# 2. `while` loop
 # NOTE: `while` loops can end up in infinite loops
 # if there no start and end conditions such as `j=0`
 # and `j <= 5`.
@@ -38,4 +38,4 @@ for b in range(1, 11, 2):
 
 # This can be also shortened via list comprehensions
 print("Example 6 : Iterating over a range() with list comprehensions")
-print([b**2 for b in range(1, 11, 2)])
+print([b ** 2 for b in range(1, 11, 2)])

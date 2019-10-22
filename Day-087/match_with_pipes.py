@@ -17,8 +17,7 @@ def check_words(string=None):
     else:
         # IMPORTANT: DO NOT PUT SPACES IN BETWEEN PIPES
         # ie. DO NOT use re.compile("Britain | Ireland | Wales | Scotland")
-        british_isles_regex = re.compile(
-            "Britain|Ireland|Wales|Scotland")
+        british_isles_regex = re.compile("Britain|Ireland|Wales|Scotland")
         search_output = british_isles_regex.search(string)
 
         try:
@@ -26,6 +25,7 @@ def check_words(string=None):
                 print("\n - Your input contains {}".format(search_output.group()))
         except AttributeError:
             print("\n - Your input does not match the pattern.")
+
 
 check_words("I am calling from Ireland")
 check_words("I am not here")

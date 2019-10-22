@@ -19,11 +19,10 @@ else:
 # Example 3
 # Ask for an input
 value = input("What is the price for that thing?")
-value = int(value) # Try converting it to an int
+value = int(value)  # Try converting it to an int
 if value < 10:
     print("That's great!")
 elif 10 <= value <= 20:
     print("I would still buy it!")
 else:
     print("That's costly!")
-

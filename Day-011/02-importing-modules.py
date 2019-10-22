@@ -15,6 +15,7 @@ import this
 
 print("")
 import math
+
 print(math.sqrt(4))
 
 # Import just a specific function, or more

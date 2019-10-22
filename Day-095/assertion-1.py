@@ -8,11 +8,13 @@ even if their cases are different.
 and 'goodbye' and 'GOODbye' are also considered the same).
 """
 
+
 def assert_test(eggs=None, bacon=None):
     first_word = eggs.lower()
     sec_word = bacon.lower()
     # 1. Raise AssertionError, if eggs NOT in bacon, or bacon NOT in eggs.
     assert (first_word in sec_word) or (sec_word in first_word), "Words not equal"
+
 
 # First test - eggs IN bacon
 assert_test("hello", "hello how are you?")

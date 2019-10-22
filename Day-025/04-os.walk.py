@@ -26,6 +26,3 @@ for dirs, sub_dirs, files in os.walk(path):
     for i in file_path:
         print("\tFiles: {}".format(i))
     print()
-
-
-

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def maximus(*args):
     """
     Find the largest number
@@ -7,6 +8,7 @@ def maximus(*args):
     """
     print(max(*args))
     return max(*args)
+
 
 def minimus(*args):
     """Find the smallest number"""

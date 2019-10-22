@@ -35,8 +35,7 @@ print("%(food)s is tasty" % {"food": "Bacon"})
 print("%(value)s, %(value)s, %(value)s" % {"value": "SPAM"})
 
 # Integers
-print("%(a)i + %(b)i + %(c)i = %(d)i" %
-      {"a": 1, "b": 2, "c": 3, "d": 7})
+print("%(a)i + %(b)i + %(c)i = %(d)i" % {"a": 1, "b": 2, "c": 3, "d": 7})
 
 # 2. New method, using format()
 
@@ -44,16 +43,16 @@ print("%(a)i + %(b)i + %(c)i = %(d)i" %
 print("{0} is {1}".format("Bacon", "Awesome"))
 print("{0} + {1} = {2}".format(1, 2, 3))
 print("{0} + {1} = {3}".format(1, 2, 1, 3))
-print('{0}, {1}, {2}'.format('a', 'b', 'c'))
-print('{}, {}, {}'.format('a', 'b', 'c'))
-print('{2}, {1}, {0}'.format('a', 'b', 'c'))
+print("{0}, {1}, {2}".format("a", "b", "c"))
+print("{}, {}, {}".format("a", "b", "c"))
+print("{2}, {1}, {0}".format("a", "b", "c"))
 
 # Normal formatting
 name = "Sherlock"
 print("Hello {}".format(name))
 
 # Unpacking the positional values in a string
-print("{4} is the sum of {1} and {3}".format(*'012345'))
+print("{4} is the sum of {1} and {3}".format(*"012345"))
 print("{1}{0}{1}! You're done!".format("cad", "abra"))
 
 # Aligning text

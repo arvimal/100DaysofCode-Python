@@ -11,4 +11,3 @@ print("Printing Sections and corresponding Options:")
 for section in conf_parser.sections():
     print("\t[{}]".format(section))
     print("\t\t{}".format(conf_parser.options(section)))
-

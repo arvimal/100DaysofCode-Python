@@ -2,11 +2,13 @@
 
 import csv
 
+
 def csv_reader(file_obj):
 
     reader = csv.reader(file_obj)
     for row in reader:
         print(" ".join(row))
+
 
 if __name__ == "__main__":
     csv_path = "/home/vimal/TB_data_dictionary_2017-12-31.csv"

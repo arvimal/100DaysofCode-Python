@@ -14,5 +14,8 @@ match = re.search(pattern, text)
 start = match.start()
 end = match.end()
 
-print("Found: `{}`\nIn: `{}`\nAt position: {} to {}".format(
-    match.re.pattern, match.string, start, end))
+print(
+    "Found: `{}`\nIn: `{}`\nAt position: {} to {}".format(
+        match.re.pattern, match.string, start, end
+    )
+)

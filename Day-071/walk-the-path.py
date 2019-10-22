@@ -13,7 +13,9 @@ def walk_the_path(x):
         for subFolder in subFolders:
             print("- - Sub-folder of {}: {}".format(folderName, subFolder))
         for fileName in fileNames:
-            print("- - - File inside {}/{}/ : {}".format(folderName, subFolder, fileName))
+            print(
+                "- - - File inside {}/{}/ : {}".format(folderName, subFolder, fileName)
+            )
 
 
 walk_the_path("/home/vimal/00-Help/")

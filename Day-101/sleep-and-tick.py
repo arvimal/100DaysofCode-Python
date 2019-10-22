@@ -10,9 +10,7 @@ def sleep_n_tick(s=None, t=None):
     if s is None or t is None:
         print("Sleep and tick values required.")
     else:
-        print("-Ticking for {} counts, and sleeping {} sec in-between".format(
-            t, s)
-        )
+        print("-Ticking for {} counts, and sleeping {} sec in-between".format(t, s))
         for i in range(t):
             print("Tick...")
             time.sleep(s)

@@ -20,9 +20,11 @@ extends the format of email to support:
 # Using `smtplib` to connect to the Mail server, increase debug level,
 # and send the mail.
 import smtplib
+
 # Using the utils function in the `email` module, for setting the message,
 # setting the To, From etc.
 import email.utils
+
 # Using `MIMETest` to convert the text to MIME format.
 from email.mime.text import MIMEText
 
@@ -44,9 +46,7 @@ try:
     # NOTE: The `sendmail()` method takes the recipient addresses
     # as a list, since a mail can be send to multiple addresses
     # in a single go.
-    mail_server.sendmail("arvimal@yahoo.in",
-                         ["arvimal@yahoo.in"],
-                         message.as_string())
+    mail_server.sendmail("arvimal@yahoo.in", ["arvimal@yahoo.in"], message.as_string())
 finally:
     mail_server.quit()
 

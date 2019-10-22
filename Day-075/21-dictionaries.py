@@ -44,7 +44,7 @@ released = {
     "IPhone 4S": 2011,
     "IPhone 5": 2012,
     "IPhone 5s": 2013,
-    "IPhone SE": 2016
+    "IPhone SE": 2016,
 }
 
 for i, j in released.items():
@@ -57,4 +57,3 @@ released["IPhone"] += 1
 print(released["IPhone"])
 released["IPhone"] -= 1
 print(released["IPhone"])
-

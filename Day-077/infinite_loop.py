@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-VALID_COLORS = ['blue', 'yellow', 'red']
+VALID_COLORS = ["blue", "yellow", "red"]
 
 
 def print_colors():

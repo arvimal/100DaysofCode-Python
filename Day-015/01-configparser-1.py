@@ -23,5 +23,3 @@ config.set("Settings", "font_style", "Normal")
 # Open the file in `w` mode and write the configurations.
 with open(config_file, "w") as config_file:
     config.write(config_file)
-
-

@@ -42,9 +42,9 @@ class Vehicle:
     """Vehicle class"""
 
     def __init__(self, color, doors, tires, vtype):
-        self.color=color
-        self.doors=doors
-        self.tires=tires
+        self.color = color
+        self.doors = doors
+        self.tires = tires
         self.vtype = vtype
 
     def brake(self):
@@ -52,6 +52,7 @@ class Vehicle:
 
     def drive(self):
         return "I am driving a {0} {1}".format(self.color, self.vtype)
+
 
 if __name__ == "__main__":
     car = Vehicle("Blue", 5, 4, "car")

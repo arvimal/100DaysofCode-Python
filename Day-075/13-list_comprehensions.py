@@ -22,8 +22,9 @@ print([i ** 3 for i in range(1, 11) if (i ** 3) % 4 == 0])
 def dir_listing(obj):
     return [i for i in dir(obj) if not i.startswith("__")]
 
+
 # 8. Convert a list of strings to integers
-x = ['1', '2', '3', '4', '5']
+x = ["1", "2", "3", "4", "5"]
 y = [int(k) for k in x]
 print(y)
 print(type(y[1]))

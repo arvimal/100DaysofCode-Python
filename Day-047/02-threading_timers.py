@@ -9,12 +9,12 @@ import threading
 import time
 import logging
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='[%(threadName)-1s] %(message)s',)
+logging.basicConfig(level=logging.DEBUG, format="[%(threadName)-1s] %(message)s")
+
 
 def delayed():
     logging.debug("Worker thread running.")
+
 
 t1 = threading.Timer(0.5, delayed)
 t1.setName("thread_1")
@@ -31,6 +31,3 @@ time.sleep(5)
 
 logging.debug("Cancelling {}".format(t2.getName()))
 t2.cancel()
-
-
-

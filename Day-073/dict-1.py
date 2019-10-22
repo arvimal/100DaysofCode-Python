@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 
-birthdays = {
-    "Alice": "April 1",
-    "Bob": "December 12",
-    "Carol": "March 4"
-}
+birthdays = {"Alice": "April 1", "Bob": "December 12", "Carol": "March 4"}
 
 while True:
     name = input("\nEnter a name [blank to quit]: ")

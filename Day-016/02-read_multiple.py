@@ -17,4 +17,3 @@ print(conf_parser.get("main", "logfile"))
 # Expecting an output from the second file
 print(conf_parser.get("statd", "debug"))
 print(conf_parser.get("statd", "state-directory-path"))
-

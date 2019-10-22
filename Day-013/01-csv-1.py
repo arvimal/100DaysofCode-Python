@@ -30,5 +30,4 @@ with open(data_file) as data:
     # Plucked 73 apples on 4/5/2015 13:34
 
     for i in data_lists:
-        print("Plucked {1} {2} on {0}".format(
-            i[0], i[2], i[1].lower()))
+        print("Plucked {1} {2} on {0}".format(i[0], i[2], i[1].lower()))

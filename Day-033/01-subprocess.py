@@ -7,9 +7,8 @@ import subprocess
 
 # stdin is of course the input sent into `subprocess.Popen()`
 
-process = subprocess.Popen(["echo", "Hello guys!"],
-                           stdout=subprocess.PIPE)
+process = subprocess.Popen(["echo", "Hello guys!"], stdout=subprocess.PIPE)
 out, error = process.communicate()
 
-print(out.decode('utf-8'))
+print(out.decode("utf-8"))
 print(error)

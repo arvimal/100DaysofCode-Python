@@ -18,5 +18,8 @@ pattern = "Lorem Ipsum"
 # for i in sentence_list:
 for i in range(0, len(sentence_list) - 1):
     match = re.search(pattern, sentence_list[i])
-    print("{}. `{}` found at start position `{}` till end position `{}` in `{}`\n".format(
-        i + 1, match.re.pattern, match.start(), match.end(), match.string))
+    print(
+        "{}. `{}` found at start position `{}` till end position `{}` in `{}`\n".format(
+            i + 1, match.re.pattern, match.start(), match.end(), match.string
+        )
+    )

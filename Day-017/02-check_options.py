@@ -12,4 +12,4 @@ for i in ["main", "test1", "test", "section", "section1"]:
     has_section = conf_parser.has_section(i)
     for j in ["keepcache", "gpgcheck"]:
         has_option = conf_parser.has_option(i, j)
-        print('{}.{:<12}  : {}'.format(i, j, has_option))
+        print("{}.{:<12}  : {}".format(i, j, has_option))

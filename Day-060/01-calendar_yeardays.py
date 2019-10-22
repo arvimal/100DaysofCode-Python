@@ -13,5 +13,4 @@ print("Length of top_months: {}".format(len(top_months)))
 first_month = top_months[0]
 print("Length of first_month: {}".format(len(first_month)))
 
-#print("First month")
-
+# print("First month")

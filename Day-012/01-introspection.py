@@ -34,6 +34,7 @@ a = "test"
 print(type(a))
 
 import sys
+
 dir(sys)
 
 help(sys)

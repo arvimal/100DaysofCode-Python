@@ -17,11 +17,8 @@ pattern_D = "are"
 text = "Hello, how are you?"
 
 # Create the compiled regex objects
-pattern_regex_list = [re.compile(i) for i in [
-    pattern_A,
-    pattern_B,
-    pattern_C,
-    pattern_D]
+pattern_regex_list = [
+    re.compile(i) for i in [pattern_A, pattern_B, pattern_C, pattern_D]
 ]
 
 for i in pattern_regex_list:

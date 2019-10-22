@@ -14,6 +14,7 @@ new.close()
 
 # 2. Check for existence
 import os
+
 if os.path.exists("/tmp/new.txt"):
     handle = open("/tmp/new.txt", "a")
     handle.write("How are you?")
@@ -25,4 +26,3 @@ else:
         handle.close()
     except:
         pass
-

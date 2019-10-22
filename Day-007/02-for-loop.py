@@ -17,7 +17,7 @@ for i in [1, 2, 3, 4]:
 print(range(1, 10))
 
 # Looping over a dict
-my_dict = {"a" : 1, "b" : 2, "c" : 3}
+my_dict = {"a": 1, "b": 2, "c": 3}
 for i in my_dict.keys():
     print(i)
 

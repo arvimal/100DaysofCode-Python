@@ -61,7 +61,7 @@ def isfloat(x):
             print("{} is an integer.".format(a))
         except ValueError:
             print("{} is {}".format(a, type(a)))
-    #----
+    # ----
     elif len(x_list) == 2:
         try:
             a, b = x_list[0], x_list[1]
@@ -72,6 +72,8 @@ def isfloat(x):
 
     else:
         print("{} is a string".format(x))
+
+
 #
 isfloat(1)
 isfloat("1")

@@ -6,7 +6,6 @@ from threading import Thread
 
 
 class DownloadThread(Thread):
-
     def __init__(self, url, name):
         Thread.__init__(self)
         self.name = name
@@ -33,10 +32,12 @@ def main(urls):
 
 
 if __name__ == "__main__":
-    urls = ["http://www.buildeazy.com/plans/test.pdf",
-            "http://www.orimi.com/pdf-test.pdf",
-            "http://che.org.il/wp-content/uploads/2016/12/pdf-sample.pdf"
-            "http://www.irs.gov/pub/irs-pdf/f1040.pdf"]
+    urls = [
+        "http://www.buildeazy.com/plans/test.pdf",
+        "http://www.orimi.com/pdf-test.pdf",
+        "http://che.org.il/wp-content/uploads/2016/12/pdf-sample.pdf"
+        "http://www.irs.gov/pub/irs-pdf/f1040.pdf",
+    ]
 
     main(urls)
 

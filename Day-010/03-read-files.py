@@ -11,7 +11,7 @@ handle.close()
 # 1.2. Read file in chunks
 handle = open("/tmp/new.txt", "r")
 while True:
-    data = handle.read(1024) # Read 1024 / 1KB of data
+    data = handle.read(1024)  # Read 1024 / 1KB of data
     print(data)
 handle.close()
 

@@ -10,7 +10,7 @@
 # CRITICAL
 
 # The file will be appended with the logs, by default.
-# Overwriting the log file is possible with adding 
+# Overwriting the log file is possible with adding
 # `filemode="w"`.
 
 # The `basicConfig()` method allows to log to a file,

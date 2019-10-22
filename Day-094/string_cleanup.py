@@ -2,8 +2,7 @@
 
 #
 
-daily_sales = \
-"""Edith Mcbride   ;,;$1.21   ;,;   white ;,;
+daily_sales = """Edith Mcbride   ;,;$1.21   ;,;   white ;,;
 09/15/17   ,Herbert Tran   ;,;   $7.29;,;
 white&blue;,;   09/15/17 ,Paul Clarke ;,;$12.52
 ;,;   white&blue ;,; 09/15/17 ,Lucille Caldwell
@@ -109,26 +108,26 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,; green&white&blue   ;,; 09/15/17 , Myrtle Morris
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
-#------------------------------------------------
+# ------------------------------------------------
 # Start coding below!
 
 daily_sales_replaced = daily_sales.replace(";,;", "|")
-#print(daily_sales_replaced)
+# print(daily_sales_replaced)
 
 daily_transactions = daily_sales_replaced.split(",")
-#print(daily_transactions)
+# print(daily_transactions)
 
 daily_transactions_split = []
 for value in daily_transactions:
-  daily_transactions_split.append(value.split("|"))
-#print(daily_transactions_split)
+    daily_transactions_split.append(value.split("|"))
+# print(daily_transactions_split)
 
 transactions_clean = []
 for i in daily_transactions_split:
-  clean_list = []
-  for j in i:
-    clean_list.append(j.strip())
-  transactions_clean.append(clean_list)
+    clean_list = []
+    for j in i:
+        clean_list.append(j.strip())
+    transactions_clean.append(clean_list)
 # print(transactions_clean)
 
 customers = []
@@ -136,50 +135,51 @@ sales = []
 threads_sold = []
 
 for value in transactions_clean:
-  customers.append(value[0])
-  sales.append(value[1])
-  threads_sold.append(value[2])
+    customers.append(value[0])
+    sales.append(value[1])
+    threads_sold.append(value[2])
 
-#print(customers)
-#print(sales)
-#print(threads_sold)
+# print(customers)
+# print(sales)
+# print(threads_sold)
 
 total_sales = 0
 for sale in sales:
-  total_sales += (float(sale.strip("$")))
-#print(total_sales)
+    total_sales += float(sale.strip("$"))
+# print(total_sales)
 
 threads_sold_split = []
 for color in threads_sold:
-  if "&" not in color:
-    threads_sold_split.append(color)
-  else:
-    multiple_color_list = color.split("&")
-    for item in multiple_color_list:
-      threads_sold_split.append(item)
+    if "&" not in color:
+        threads_sold_split.append(color)
+    else:
+        multiple_color_list = color.split("&")
+        for item in multiple_color_list:
+            threads_sold_split.append(item)
 # print(threads_sold_split)
 
 
 color_count = {}
 for color in threads_sold_split:
-  if color in color_count:
-    color_count[color] += 1
-  elif color not in color_count:
-    color_count[color] = 1
+    if color in color_count:
+        color_count[color] += 1
+    elif color not in color_count:
+        color_count[color] = 1
 
 print("\nColor count :-\n")
 for key in color_count:
-  print("{:<10}: {:<3}".format(key, color_count[key]))
+    print("{:<10}: {:<3}".format(key, color_count[key]))
 
 # A function to query one color at a time.
 def count_the_color(color):
-  count = 0
-  for val in threads_sold_split:
-    if val == color:
-      count += 1
-    else:
-      pass
-  print("  {} : {}".format(color, count))
-  return count
+    count = 0
+    for val in threads_sold_split:
+        if val == color:
+            count += 1
+        else:
+            pass
+    print("  {} : {}".format(color, count))
+    return count
 
-#count_the_color("white")
+
+# count_the_color("white")

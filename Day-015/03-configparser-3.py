@@ -13,8 +13,7 @@ import os
 
 def create_config(path):
 
-    config = configparser.ConfigParserconfig.set(
-        "GLOBAL", "interface_name", "ensp01")
+    config = configparser.ConfigParserconfig.set("GLOBAL", "interface_name", "ensp01")
     config.add_section("GLOBAL")
     config.set("GLOBAL", "interface_name", "ensp01")
     config.set("GLOBAL", "interface_ip", "192.168.10.1")
@@ -35,8 +34,7 @@ def get_config(path):
 def get_settings(path, section, setting):
     config = get_config(path)
     value = config.get(section, setting)
-    print("In Section {0}, {1} is {2}".format(
-        section, setting, value))
+    print("In Section {0}, {1} is {2}".format(section, setting, value))
     return value
 
 

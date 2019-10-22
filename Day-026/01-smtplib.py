@@ -15,13 +15,15 @@ FROM = "arvimal@yahoo.in"
 PORT = 465
 CONTENT = "Hello, how are you today?"
 
-BODY = "\r\n".join((
-    "From: {}".format(FROM),
-    "To: {}".format(TO),
-    "Subject: {}".format(SUBJECT),
-    "",
-    CONTENT
-))
+BODY = "\r\n".join(
+    (
+        "From: {}".format(FROM),
+        "To: {}".format(TO),
+        "Subject: {}".format(SUBJECT),
+        "",
+        CONTENT,
+    )
+)
 
 server = smtplib.SMTP(HOST, PORT)
 server.sendmail(FROM, [TO], BODY)

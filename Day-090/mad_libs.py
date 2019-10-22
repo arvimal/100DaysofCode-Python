@@ -35,12 +35,26 @@ dessert = input("Enter a dessert name: ")
 year = input("Enter a year: ")
 
 
-print(STORY % (name, adj1, adj2, animal, food, verb1, noun1, fruit, adj3, name, superhero, name, country, name, dessert, name, year, noun2))
-
-
-
-
-
-
-
-
+print(
+    STORY
+    % (
+        name,
+        adj1,
+        adj2,
+        animal,
+        food,
+        verb1,
+        noun1,
+        fruit,
+        adj3,
+        name,
+        superhero,
+        name,
+        country,
+        name,
+        dessert,
+        name,
+        year,
+        noun2,
+    )
+)

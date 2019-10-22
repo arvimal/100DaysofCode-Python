@@ -20,4 +20,3 @@ try:
             print(line)
 except IOError:
     print("IOError")
-

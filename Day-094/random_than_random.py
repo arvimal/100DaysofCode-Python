@@ -17,4 +17,3 @@ print(random_list)
 # Pick a random number from the random list `random_list`
 print("")
 print("Randomest randomer: {:<3}".format(random.choice(random_list)))
-

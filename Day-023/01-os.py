@@ -30,4 +30,3 @@ print("/tmp/dir_2 exists: {}".format(os.path.exists("/tmp/dir_2")))
 # and can find all the sub-dirs and files within
 for root, dirs, files in os.walk("/tmp/"):
     print("{} : {} / {}".format(root, dirs, files))
-

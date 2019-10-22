@@ -18,4 +18,3 @@ print("Today        : {}".format(today.today()))
 print("Min time     : {}".format(datetime.date.min))
 print("Max time     : {}".format(datetime.date.max))
 print("Resolution   : {}".format(datetime.date.resolution))
-

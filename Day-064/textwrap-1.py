@@ -20,4 +20,3 @@ print("1. The text after removing the indentation:")
 print(dedented_text)
 print("\n2. The text after setting a line width of 70 chars:")
 print(textwrap.fill(dedented_text, width=70))
-

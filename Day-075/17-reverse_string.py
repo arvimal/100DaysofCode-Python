@@ -14,5 +14,6 @@ def reverse(text):
 
     print("{} : {}".format(text, reverse_text))
 
+
 reverse("ABCD")
 reverse("Texting fuckable")
