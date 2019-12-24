@@ -59,3 +59,4 @@ class Solution:
 
 Test = Solution()
 Test.toGoatLatin("I speak Goat Latin")
+Test.toGoatLatin("A x gij T Ka Stsl UTK kqdc A")
