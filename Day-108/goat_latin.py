@@ -11,14 +11,15 @@ We would like to convert the sentence to "Goat Latin" (a made-up language simila
 
 The rules of Goat Latin are as follows:
 
-If a word begins with a vowel (a, e, i, o, or u), append "ma" to the end of the word.
+* If a word begins with a vowel (a, e, i, o, or u), append "ma" to the end of the word.
 For example, the word 'apple' becomes 'applema'.
 
-If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add "ma".
+* If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add "ma".
 For example, the word "goat" becomes "oatgma".
 
-Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
-For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
+* Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
+
+* For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
 Return the final sentence representing the conversion from S to Goat Latin.
 
 Example 1:
@@ -38,12 +39,15 @@ S contains only uppercase, lowercase and spaces. Exactly one space between each 
 
 """
 
-
+# Initial submission working on indexes, which failed with the third input ("A x gij T Ka Stsl UTK kqdc A")
+"""
 class Solution:
     def toGoatLatin(self, S: str) -> str:
-        word_list = S.split()
-        goat_word = []
-        for word in word_list:
+
+
+`        word_list = S.split()
+      goat_word = []
+       for word in word_list:
             index = word_list.index(word)
             if word[0].lower() in ["a", "e", "i", "o", "u"]:
                 j = word + "ma" + str((index + 1) * "a")
@@ -58,5 +62,26 @@ class Solution:
         return final_line.strip()
 
 Test = Solution()
+Test.toGoatLatin("I speak Goat Latin")
+Test.toGoatLatin("A x gij T Ka Stsl UTK kqdc A")`
+"""
+
+class Solution:
+    def toGoatLatin(self, S):
+        word_list = S.split()
+        final_list = ""
+        for num, word in enumerate(word_list):
+            if word[0].lower() in ["a", "e", "i", "o", "u"]:
+                vowel_word = word + "ma" + ("a" * (num + 1))
+                final_list = final_list + " " + vowel_word
+            else:
+                cons_word = word[1:] + word[0] + "ma" + ("a" * (num + 1))
+                final_list = final_list + " " + cons_word
+        print(final_list.strip())
+        return final_list.strip()
+
+
+Test = Solution()
+Test.toGoatLatin("A be to how are A")
 Test.toGoatLatin("I speak Goat Latin")
 Test.toGoatLatin("A x gij T Ka Stsl UTK kqdc A")
