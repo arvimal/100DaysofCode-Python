@@ -10,9 +10,12 @@ The goal is to:
 4. Error handling
 5. Functions and Classes.
 6. Use and learn the Python Standard Library.
+7. Proceed to LeetCode / HackerRank problems.
 
 ### References:
 
 * `Python 101` - Michael Driscoll
 * `Python 201` - Michael Driscoll
 * `The Python 3 Standard Library by Example` - Doug Hellmann
+* `Leetcode`
+* `HackerRank`
