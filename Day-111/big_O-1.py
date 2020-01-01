@@ -11,9 +11,6 @@ def print_first_item(items):
     print(items[2])
     print(items[6])
 
-print("m,n guyh ckuof8uyt clg8ruyt8r594dyt8ilrcf4ylhuynir")
-
-
 print_first_item(items)
 
 
