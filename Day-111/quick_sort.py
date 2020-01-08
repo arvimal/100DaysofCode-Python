@@ -8,7 +8,11 @@
 def quick_sort(num_list):
     """
     Quick sort in Python
+
+    If length of the list is 1 or less, there is no point in sorting it.
+    Hence, the code works on lists with sizes greater than 1
     """
+    
     if len(num_list) <= 1:
         return(num_list)
     else:
