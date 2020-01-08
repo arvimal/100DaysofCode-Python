@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+
+# Algorithm: Quick sort
+# Referrence: https://github.com/TheAlgorithms/Python/blob/master/sorts/quick_sort.py
+
+
+
 def quick_sort(num_list):
     """
     Quick sort in Python
@@ -19,5 +26,5 @@ def quick_sort(num_list):
     return quick_sort(less_than) + [pivot] + quick_sort(greater_than)
 
 
-num_list = [9, 1, 2, 3, 8, 5, 4]
+num_list = [10, -1, 100, 23, 5, 98, 45, 76, -545, -300, 9999]
 print(quick_sort(num_list))
