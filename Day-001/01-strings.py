@@ -37,3 +37,10 @@ unicode_String = u"This is unicode"
 # Strings can be concatenated
 string_11 = string_10 + string_9
 print(string_11)
+
+# Underscore in numbers
+# Something I didn't know for sure.
+# You can use underscores in large numbers similar
+# to using commas for readability
+my_age = 15_000_234_543
+print("I am {} years old now".format(my_age))
