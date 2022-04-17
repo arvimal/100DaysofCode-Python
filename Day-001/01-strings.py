@@ -43,4 +43,4 @@ print(string_11)
 # You can use underscores in large numbers similar
 # to using commas for readability
 my_age = 15_000_234_543
-print("I am {} years old now".format(my_age))
+print(f"I am {my_age} years old now")

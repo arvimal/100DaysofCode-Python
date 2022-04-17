@@ -37,7 +37,7 @@ print("%(value)s, %(value)s, %(value)s" % {"value": "SPAM"})
 # Integers
 print("%(a)i + %(b)i + %(c)i = %(d)i" % {"a": 1, "b": 2, "c": 3, "d": 7})
 
-# 2. New method, using format()
+# 2. A more sane method, using format()
 
 # Formatting using Positional arguments
 print("{0} is {1}".format("Bacon", "Awesome"))
@@ -60,3 +60,7 @@ print("{:30}".format("testing"))  # No effect
 print("{:^30}".format("Center aligned"))
 print("{:<30}".format("Left aligned"))
 print("{:>30}".format("Right aligned"))
+
+# 3. The latest, using `f-strings`
+print("This is F-Strings")
+print(f"My name is {name}")
