@@ -25,7 +25,7 @@ if empty_string:
 
 # This is an explicit check for an empty list, rather than
 # the existence of a name called `empty_list`.
-if empty_list == []:
+if not empty_list:
     print("Empty list")
 
 # This is an existence check, and not a content check.

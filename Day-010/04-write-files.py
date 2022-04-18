@@ -8,21 +8,18 @@
 # not overwrite the data, but rather append to it.
 
 # 1. A simple write
-new = open("/tmp/new_1.txt", "w")
-new.write("This is a text")
-new.close()
+with open("/tmp/new_1.txt", "w") as new:
+    new.write("This is a text")
 
 # 2. Check for existence
 import os
 
 if os.path.exists("/tmp/new.txt"):
-    handle = open("/tmp/new.txt", "a")
-    handle.write("How are you?")
-    handle.close()
+    with open("/tmp/new.txt", "a") as handle:
+        handle.write("How are you?")
 else:
     try:
-        handle = open("/tmp/new.txt", "x")
-        handle.write("Hello World!")
-        handle.close()
-    except:
+        with open("/tmp/new.txt", "x") as handle:
+            handle.write("Hello World!")
+    except Exception:
         pass

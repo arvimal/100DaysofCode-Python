@@ -14,7 +14,7 @@ def my_func_2(a, b):
     return a + b
 
 
-add(10, 20)
+print(my_func_2(10, 20))
 
 # 2. Empty functions or Stubs
 # pass is a null operation, and does nothing but

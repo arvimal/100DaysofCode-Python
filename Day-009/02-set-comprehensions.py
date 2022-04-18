@@ -26,5 +26,5 @@ Out[4]: {1, 2, 3, 4, 5} #
 """
 
 list_1 = [1, 2, 3, 4, 4, 6, 1, 2, 5]
-set_1 = {x for x in list_1}
+set_1 = {x for x in list_1}  # Or simply, set(list_1)
 print(set_1)

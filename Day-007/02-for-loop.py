@@ -18,7 +18,7 @@ print(range(1, 10))
 
 # Looping over a dict
 my_dict = {"a": 1, "b": 2, "c": 3}
-for i in my_dict.keys():
+for i in my_dict:  # Iteration a dictionary always iterate through keys
     print(i)
 
 # Another example:

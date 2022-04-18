@@ -28,7 +28,7 @@ else:
 my_list = [1, 2, 3, 4, 5]
 x = 10
 if x not in my_list:
-    print("x is not in {}".format(my_list))
+    print(f"x is not in {my_list}")
 
 if x != 11:
     print("x is not 11!")

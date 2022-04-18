@@ -12,7 +12,7 @@
 
 def hello(*args):
     print(args)
-    print("First element : {}".format(args[0]))
+    print(f"First element : {args[0]}")
     print("Second element : {}\n".format(args[1]))
 
 
@@ -20,7 +20,7 @@ hello("hello", "how", "are", "you?")
 hello(1, 2, 3)
 hello([1, 2], ["a", "b"])
 
-
+###
 # 2. **kwargs
 def keyargs(**kwargs):
     print(kwargs)
@@ -28,7 +28,7 @@ def keyargs(**kwargs):
 
 keyargs(name="Tulip", job="SDE")
 
-
+##
 def testing(*args, **kwargs):
     print(args)
     print(kwargs)

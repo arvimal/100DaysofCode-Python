@@ -16,8 +16,6 @@ print(type(name))
 print(dir(name))
 
 # 2. Creating a custom class
-
-
 class Animal:
     """Animal Class"""
 
@@ -26,7 +24,7 @@ class Animal:
         pass
 
     def print_name(self, name):
-        print("{} is an Animal".format(name))
+        print(f"{name} is an Animal")
 
 
 # Creating an instance out of Animal class
@@ -48,7 +46,7 @@ class Vehicle:
         self.vtype = vtype
 
     def brake(self):
-        return "{} braking".format(self.vtype)
+        return f"{self.vtype} braking"
 
     def drive(self):
         return "I am driving a {0} {1}".format(self.color, self.vtype)
