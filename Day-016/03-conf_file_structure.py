@@ -8,7 +8,7 @@ conf_parser = configparser.ConfigParser()
 conf_parser.read(["example_config_1.conf", "example_config_2.conf"])
 
 for section in conf_parser.sections():
-    print("Section: {}".format(section))
+    print(f"Section: {section}")
 
     # The `options()` method returns a list of options under each section.
     # This prints
@@ -22,4 +22,4 @@ for section in conf_parser.sections():
     # with the items under each section and its values.
     print("Options and corresponding Values in the configuration file")
     for option, values in conf_parser.items(section):
-        print(" {}: {}".format(option, values))
+        print(f" {option}: {values}")

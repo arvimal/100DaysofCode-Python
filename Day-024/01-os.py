@@ -9,8 +9,8 @@ import os
 # os.access() tests the access to a file using
 # the real uid/gid of the user executing the file
 
-print("Calling {}".format(__file__))
-print("Does exist: {}".format(os.access(__file__, os.F_OK)))
-print("Is readable: {}".format(os.access(__file__, os.R_OK)))
-print("Is writable: {}".format(os.access(__file__, os.W_OK)))
-print("Is executable: {}".format(os.access(__file__, os.EX_OK)))
+print(f"Calling {__file__}")
+print(f"Does exist: {os.access(__file__, os.F_OK)}")
+print(f"Is readable: {os.access(__file__, os.R_OK)}")
+print(f"Is writable: {os.access(__file__, os.W_OK)}")
+print(f"Is executable: {os.access(__file__, os.EX_OK)}")

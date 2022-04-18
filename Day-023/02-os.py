@@ -11,7 +11,7 @@ print(os.path.basename("/tmp/test.txt"))
 print(os.path.dirname("/tmp/test.txt"))
 
 # 3. os.path.exists() check for the existence of paths
-print("Checking /tmp/test.txt exists: {}".format(os.path.exists("/tmp/test.txt")))
+print(f'Checking /tmp/test.txt exists: {os.path.exists("/tmp/test.txt")}')
 
 # 4. os.path.isdir() and os.path.isfile()
 if os.path.isdir("/tmp/test.txt"):

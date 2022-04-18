@@ -14,5 +14,5 @@ conf_file = "example_config_1.conf"
 conf_parser = configparser.ConfigParser()
 conf_parser.read(conf_file)
 
-print(conf_parser.get("general", "directory"))
-print(con)
+print(conf_parser.get("main", "debuglevel"))
+print(dir(conf_parser))

@@ -2,6 +2,7 @@
 
 # Creating, deleting folders/files
 
+import contextlib
 import os
 
 FOLDER = "/tmp/dir_1"
@@ -9,20 +10,17 @@ FILE = "testing.txt"
 PATH = FOLDER + FILE
 
 # Checking for pre-existence, and deleting
-try:
+with contextlib.suppress(OSError):
     os.removedirs(FOLDER)
-except OSError:
-    pass
-
-print("Creating {}".format(FOLDER))
+print(f"Creating {FOLDER}")
 os.makedirs(FOLDER)
 
-print("Creating `{}` in `{}`".format(FILE, FOLDER))
+print(f"Creating `{FILE}` in `{FOLDER}`")
 
 print("Writing content to", FILE)
 with open(PATH, "w") as fd:
     fd.write("Hello, How are you?")
 
-print("Deleting {} and {}".format(FOLDER, FILE))
+print(f"Deleting {FOLDER} and {FILE}")
 os.unlink(PATH)
 os.removedirs(FOLDER)

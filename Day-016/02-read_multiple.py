@@ -9,11 +9,12 @@ conf_parser.read(["example_config_1.conf", "example_config_2.conf"])
 
 # In case of reading multiple files, the section being read
 # can be present in any of the files.
+# This does not ensure the configuration present in a specific file.
 
-# Expecting an output from the first file
+# Expecting an output from any of the config files
 print(conf_parser.get("main", "cachedir"))
 print(conf_parser.get("main", "logfile"))
 
-# Expecting an output from the second file
+# Expecting an output from any of the config files
 print(conf_parser.get("statd", "debug"))
 print(conf_parser.get("statd", "state-directory-path"))
