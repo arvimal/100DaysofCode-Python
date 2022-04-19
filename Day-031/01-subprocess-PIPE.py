@@ -11,6 +11,6 @@ import subprocess
 #
 completed = subprocess.run(["ls", "-l"], stdout=subprocess.PIPE)
 
-print("Return Code: {}".format(completed.returncode))
+print(f"Return Code: {completed.returncode}")
 
 print("\nstdout : {}".format(completed.stdout.decode("utf-8")))

@@ -16,4 +16,4 @@ if status == 0:
     print("Process start a success!")
 else:
     print("Process start a failure")
-print("Return status: {}".format(status))
+print(f"Return status: {status}")

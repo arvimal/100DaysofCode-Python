@@ -10,20 +10,13 @@ import smtplib
 
 HOST = "smtp.mail.yahoo.com"
 SUBJECT = "Testing smtplib."
-TO = "arvimal@yahoo.in"
-FROM = "arvimal@yahoo.in"
+TO = "user@gmail.com"
+FROM = "user@gmail.com"
 PORT = 465
 CONTENT = "Hello, how are you today?"
 
-BODY = "\r\n".join(
-    (
-        "From: {}".format(FROM),
-        "To: {}".format(TO),
-        "Subject: {}".format(SUBJECT),
-        "",
-        CONTENT,
-    )
-)
+BODY = "\r\n".join((f"From: {FROM}", f"To: {TO}", f"Subject: {SUBJECT}", "", CONTENT))
+
 
 server = smtplib.SMTP(HOST, PORT)
 server.sendmail(FROM, [TO], BODY)

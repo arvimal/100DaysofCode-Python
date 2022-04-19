@@ -22,7 +22,7 @@ except ValueError:
 use_tls = input("Use TLS? [Y/N]").lower()
 username = input("Username: ")
 # Get the password without echoing
-password = getpass.getpass("Password for {}: ".format(username))
+password = getpass.getpass(f"Password for {username}: ")
 
 message = MIMEText("Hello, how are you?")
 message.set_unixfrom("Author")
@@ -32,11 +32,9 @@ message["Subject"] = "Test mail"
 
 if use_tls == "y":
     print("Setting up a secure connection.")
-    mail_server = smtplib.SMTP(server_name, server_port)
 else:
     print("TLS not activated, connection insecure!")
-    mail_server = smtplib.SMTP(server_name, server_port)
-
+mail_server = smtplib.SMTP(server_name, server_port)
 # Activate the debuglevel
 mail_server.set_debuglevel(True)
 
@@ -56,13 +54,13 @@ if mail_server.has_extn("STARTTLS"):
     # to identify ourself for the TLS session
     mail_server.ehlo()
 else:
-    print("{} does not support TLS".format(server_name))
+    print(f"{server_name} does not support TLS")
 
 if mail_server.has_extn("AUTH"):
     print("Trying to authenticate using username/password")
     mail_server.login(username, password)
 else:
-    print("{} does not support authentication".format(server_name))
+    print(f"{server_name} does not support authentication")
 
 mail_server.sendmail("arvimal@yahoo.in", [recipient], message.as_string())
 

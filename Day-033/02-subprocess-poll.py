@@ -10,4 +10,4 @@ while process.poll() is None:
     print("Still working!")
     time.sleep(0.2)
 
-print("Exit status: {}".format(process.poll()))
+print(f"Exit status: {process.poll()}")

@@ -3,6 +3,8 @@
 import sqlite3
 import os
 
+import pathlib
+
 sqlite3_db = "test.db"
 sqlite3_schema = "test_schema.sql"
 
@@ -10,9 +12,8 @@ if os.path.exists(sqlite3_db):
     os.unlink(sqlite3_db)
 
 with sqlite3.connect(sqlite3_db) as connection:
-    print("Creating SQlite3 schema {}".format(sqlite3_schema))
-    with open(sqlite3_schema) as schema_file:
-        schema = schema_file.read()
+    print(f"Creating SQlite3 schema {sqlite3_schema}")
+    schema = pathlib.Path(sqlite3_schema).read_text()
     connection.executescript(schema)
 
     print("Adding initial data.")
