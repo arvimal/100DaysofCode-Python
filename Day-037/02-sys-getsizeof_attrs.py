@@ -23,5 +23,5 @@ class MyNewClass:
 my_class = MyClass()
 my_new_class = MyNewClass()
 
-print("Size of class object w/o atts: {}".format(sys.getsizeof(my_class)))
-print("Size of class object with attrs: {}".format(sys.getsizeof(my_new_class)))
+print(f"Size of class object w/o atts: {sys.getsizeof(my_class)}")
+print(f"Size of class object with attrs: {sys.getsizeof(my_new_class)}")
