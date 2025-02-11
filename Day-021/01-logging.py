@@ -4,7 +4,7 @@ import logging
 import module
 
 
-def main():
+def main() -> None:
     logging.basicConfig(filename="test.log", level=logging.INFO)
     logging.info("Starting the program.")
     result = module.add(10, 100)
